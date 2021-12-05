@@ -1,1 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix mo: <http://purl.org/ontology/mo#>.
+@prefix ecom: <https://ecommerce.univ-paris8.fr/onto/ecom#> .
 
+<https://ecommerce.univ-paris8.fr/onto/ecom#> a owl:Ontology ;
+    dcterms:title "Site ecommerce " .
+
+ecom:client a rdfs:Class ;
+    rdfs:label "client" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:commande a rdfs:Class ;
+    rdfs:label "commande" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:produit a rdfs:Class ;
+    rdfs:label "produit" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+	
+ecom:nom a rdf:Property ;
+    rdfs:label "nom" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:prenom a rdf:Property ;
+    rdfs:label "prenom" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:email a rdf:Property ;
+    rdfs:label "email" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:adresse a rdf:Property ;
+    rdfs:label "adresse" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:reference a rdf:Property ;
+    rdfs:label "reference" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:date a rdf:Property ;
+    rdfs:label "date" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:etat a rdf:Property ;
+    rdfs:label "etat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:designation a rdf:Property ;
+    rdfs:label "designation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:prix a rdf:Property ;
+    rdfs:label "prix" ;
+    rdfs:domain o:Resource .
+
+ecom:image a rdf:Property ;
+    rdfs:label "image" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
