@@ -6,9 +6,9 @@
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#>.
 @prefix mo: <http://purl.org/ontology/mo#>.
-@prefix ecom: <https://ecommerce.univ-paris8.fr/onto/ecom#> .
+@prefix ecom: <https://github.com/aissakert/omk/blob/main/onti.ttl#> .
 
-<https://ecommerce.univ-paris8.fr/onto/ecom#> a owl:Ontology ;
+<https://github.com/aissakert/omk/blob/main/onti.ttl#> a owl:Ontology ;
     dcterms:title "Site ecommerce " .
 
 ecom:client a rdfs:Class ;
@@ -23,6 +23,11 @@ ecom:commande a rdfs:Class ;
 
 ecom:produit a rdfs:Class ;
     rdfs:label "produit" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:user a rdfs:Class ;
+    rdfs:label "user" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 	
@@ -79,3 +84,17 @@ ecom:image a rdf:Property ;
     rdfs:label "image" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
+
+ecom:date_naissance a rdf:Property ;
+    rdfs:label "date_naissance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ecom:envoi a rdf:Property ;
+    rdfs:label "envoi" ;
+    rdfs:domain o:Resource .
+
+ecom:envoi_city a rdf:Property ;
+    rdfs:label "envoi_city" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .    
